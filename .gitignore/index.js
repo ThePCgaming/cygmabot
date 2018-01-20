@@ -232,7 +232,8 @@ bot.on("message", async function(message) {
                 .addField(".skip", "Skip une musique !")
                 .addField(".stop", "Stop la musique !")
                 .addField(".volume", "Changer le volume de la musique ! .volume <1 / 2 / 3 / 4 / 5>, si vous ne mettez pas de chiffre, le bot vous montrera le volume courent.")
-                .addField(".np", "Voir la musique en cours !")     
+                .addField(".np", "Voir la musique en cours !")
+                
                 .addField(".queue", "Voir les musiques dans la playlist !")
                 .addField(".pause", "Mettre la musique en pause !")
                 .addField(".unpause", "Relancer la musique !")
@@ -356,14 +357,7 @@ bot.on("message", async function(message) {
         message.delete();
         break;
          case "ip":
-           message.channel.sendMessage ("
-           IP : 
-
-Factions :
-factions.cygma.xyz — 19132
-
-Créatif :
-freebuild.cygma.xyz — 19133");
+ message.channel.sendMessage ("IP : Factions :factions.cygma.xyz — 19132     -Créatif :freebuild.cygma.xyz — 19133");
 message.delete();
 break;
          case "question":

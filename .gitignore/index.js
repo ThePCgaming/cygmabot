@@ -226,17 +226,17 @@ bot.on("message", async function(message) {
                 .addField(".unmute", "Cette commande permet d'unmute un utilisateur. Pour l'utiliser, faites .unmute @(utilisateur)")
                 .addField(".ping", "Grâce à cette commande, tu pourras savoir ton ping !")
                 .addField(".twitter", "Vous donne le twitter de Cookiz et de Cygma!")
-     
+                .addField(".ip",
+"Vous donne l'ip de Cygma(Faction) et de Cygma(FreeBuild)!)!")               
                 .addField(".play", "Jouer une musique ! N'oubliez pas le lien ! .play <url youtube / nom de la musique>")
                 .addField(".skip", "Skip une musique !")
                 .addField(".stop", "Stop la musique !")
                 .addField(".volume", "Changer le volume de la musique ! .volume <1 / 2 / 3 / 4 / 5>, si vous ne mettez pas de chiffre, le bot vous montrera le volume courent.")
-                .addField(".np", "Voir la musique en cours !")
-                .addField(".np", "Voir la musique en cours !")
+                .addField(".np", "Voir la musique en cours !")     
                 .addField(".queue", "Voir les musiques dans la playlist !")
                 .addField(".pause", "Mettre la musique en pause !")
                 .addField(".unpause", "Relancer la musique !")
-                .addField(".userinfo", "Informations sur un utilisateur ! z!userinfo @(utilisateur)")
+                .addField(".userinfo", "Informations sur un utilisateur ! .userinfo @(utilisateur)")
                 .addField(".serverinfo", "Informations sur le serveur !")
                 .addField(".photo", "Voir la photo de profil d'un utilisateur ! .photo @(utilisateur)")
                 .setColor("#01A9DB")
@@ -355,7 +355,17 @@ bot.on("message", async function(message) {
         message.channel.sendMessage("Pong! Tu as actuellement `" + bot.ping + " ms !` :D");
         message.delete();
         break;
-                               
+         case "ip":
+           message.channel.sendMessage ("
+           IP : 
+
+Factions :
+factions.cygma.xyz — 19132
+
+Créatif :
+freebuild.cygma.xyz — 19133");
+message.delete();
+break;
          case "question":
              message.channel.sendMessage("Vrai ou faux: Zelkiax à plus d'abonnés qu'OxO ?");
           break;
